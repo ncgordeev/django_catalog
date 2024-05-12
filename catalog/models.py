@@ -43,7 +43,9 @@ class Product(models.Model):
     )
 
     def __str__(self):
-        pass
+        return f'{self.product_title} {self.product_description}'
 
     class Meta:
-        pass
+        verbose_name = 'Товар'
+        verbose_name_plural = 'Товары'
+        ordering = ('product_title', 'product_price',)

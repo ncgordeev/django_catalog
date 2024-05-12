@@ -41,6 +41,10 @@ class Product(models.Model):
         auto_now_add=True,
         verbose_name='Дата обновления'
     )
+    manufactured_at = models.DateField(
+        default='2024',
+        verbose_name='Дата производства'
+    )
 
     def __str__(self):
         pass

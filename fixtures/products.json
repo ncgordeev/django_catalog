@@ -1,0 +1,47 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "category_title": "Сноуборды",
+      "category_description": ""
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "category_title": "Сплитбординг",
+      "category_description": ""
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "category_title": "Шлемы",
+      "category_description": ""
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "category_title": "Маски",
+      "category_description": ""
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "product_title": "Сноуборд Nidecker Play",
+      "product_description": "Сноуборд Nidecker Play предлагает райдерам начального уровня надежную доску для быстрого прогресса из сезона в сезон. Play - это доска, которая идеально подходит для расслабленного катания по трассе или изучения ваших первых трюков в парке.",
+      "product_preview": "",
+      "product_category": 1,
+      "product_price": 30000.0,
+      "created_at": "2024-05-13",
+      "updated_at": "2024-05-13"
+    }
+  }
+]

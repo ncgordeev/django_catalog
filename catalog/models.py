@@ -1,5 +1,7 @@
 from django.db import models
 
+NULLABLE = {'null': True, 'blank': True}
+
 
 class Category(models.Model):
     category_title = models.CharField(
@@ -27,7 +29,8 @@ class Product(models.Model):
         verbose_name='Описание товара'
     )
     product_preview = models.ImageField(
-        verbose_name='Превью'
+        verbose_name='Превью',
+        **NULLABLE
     )
     product_category = models.ForeignKey(Category, on_delete=models.CASCADE)
     product_price = models.FloatField(

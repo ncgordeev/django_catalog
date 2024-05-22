@@ -1,37 +1,5 @@
 [
   {
-    "model": "catalog.category",
-    "pk": 1,
-    "fields": {
-      "category_title": "Сноуборды",
-      "category_description": ""
-    }
-  },
-  {
-    "model": "catalog.category",
-    "pk": 2,
-    "fields": {
-      "category_title": "Сплитбординг",
-      "category_description": ""
-    }
-  },
-  {
-    "model": "catalog.category",
-    "pk": 3,
-    "fields": {
-      "category_title": "Шлемы",
-      "category_description": ""
-    }
-  },
-  {
-    "model": "catalog.category",
-    "pk": 4,
-    "fields": {
-      "category_title": "Маски",
-      "category_description": ""
-    }
-  },
-  {
     "model": "catalog.product",
     "pk": 1,
     "fields": {

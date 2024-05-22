@@ -1,8 +1,13 @@
 from django.shortcuts import render
 
+from catalog.models import Product
+
 
 def rendering_index(request):
-    return render(request, 'catalog/index.html')
+    context = {
+        'object_list': Product.objects.all()
+    }
+    return render(request, 'catalog/index.html', context)
 
 
 def rendering_contacts(request):
@@ -16,3 +21,11 @@ def rendering_contacts(request):
         except FileNotFoundError:
             print(f'{name} {phone} send next message: {message}')
     return render(request, 'catalog/contacts.html')
+
+
+def rendering_product(request, pk):
+    context = {
+        'object': Product.objects.get(pk=pk)
+    }
+    return render(request, 'catalog/product.html', context)
+

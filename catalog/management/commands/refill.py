@@ -11,7 +11,7 @@ class Command(BaseCommand):
     @staticmethod
     def json_read_categories():
         """Получение данных категорий из фикстуры"""
-        with open(f'{BASE_DIR}/fixtures/categories.json', encoding='UTF-8') as file:
+        with open(f'{BASE_DIR}/fixtures/01_categories.json', encoding='UTF-8') as file:
             data = json.load(file)
         list_category = []
         for category in data:
@@ -22,7 +22,7 @@ class Command(BaseCommand):
     @staticmethod
     def json_read_products():
         """Получение данных продуктов из фикстуры"""
-        with open(f'{BASE_DIR}/fixtures/products.json', encoding='UTF-8') as file:
+        with open(f'{BASE_DIR}/fixtures/02_products.json', encoding='UTF-8') as file:
             data = json.load(file)
         list_product = []
         for product in data:

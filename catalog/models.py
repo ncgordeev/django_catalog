@@ -29,6 +29,7 @@ class Product(models.Model):
         verbose_name='Описание товара'
     )
     product_preview = models.ImageField(
+        upload_to='product/',
         verbose_name='Превью',
         **NULLABLE
     )
